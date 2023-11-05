@@ -1,0 +1,49 @@
+section.posts {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+div.introduction {
+  position: sticky;
+  top: 5%;
+  width: 44%;
+  padding-right: 2%;
+}
+
+div.posts-list {
+  padding-top: 2%;
+  padding-left: 10%;  
+}
+
+div.post {
+  padding-top: 10%;
+  padding-bottom: 10%;
+
+  h3 {
+    font-family: var(--font-ibm);
+    color: black;
+    font-weight: 600;
+    font-size: 1.25em;
+  }
+
+  h5 {
+    color: #242424;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section.posts {
+    display: block;
+  }
+
+  div.introduction {
+    width: 100%;
+    padding-right: 0%;
+  }
+
+  div.posts-list {
+    padding-left: 0%;
+  }
+}
