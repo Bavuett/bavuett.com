@@ -7,7 +7,7 @@ export default function Home() {
         <section>
           <h1>Creando, imparando, e <i>rompendo</i> cose.</h1>
           <p>
-            <b> Il mio nome è Lorenzo Barretta. </b> Studio all'Università, fruisco di contenuti e
+            <b> Il mio nome è Lorenzo Barretta. </b> Studio all&#39;Università, fruisco di contenuti e
             cerco di crearne a mia volta quando possibile.
           </p>
           <p>
