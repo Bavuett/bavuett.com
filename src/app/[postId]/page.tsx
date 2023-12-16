@@ -5,7 +5,7 @@ export default async function Post({ params }: any) {
   const post_id = params.postId - 1;
 
   const file = await promises.readFile(
-    `${process.cwd()}/public/content/index.json`,
+    `${process.cwd()}/content/index.json`,
     `utf-8`
   );
 
