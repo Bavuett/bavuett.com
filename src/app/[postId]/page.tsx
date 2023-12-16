@@ -1,6 +1,9 @@
+import './post.scss';
+
 import { promises } from 'fs';
 import { redirect } from 'next/navigation';
 import path from 'path';
+import Markdown from 'markdown-to-jsx';
 
 export default async function Post({ params }: any) {
   const post_id = params.postId - 1;
@@ -26,18 +29,21 @@ export default async function Post({ params }: any) {
 
   return (
     <main>
-      <section>
-        <div>
-          <h1>
-            {data[post_id].title}
-          </h1>
-        </div>
-        <div>
-          <p>
+      <div className="post-details">
+        <h5>
+          {data[post_id].date}
+        </h5>
+        <h1>
+          {data[post_id].title}
+        </h1>
+      </div>
+      <div className="post-content">
+        <section>
+          <Markdown>
             {article_file}
-          </p>
-        </div>
-      </section>
+          </Markdown>
+        </section>
+      </div>
     </main>
   )
 }
