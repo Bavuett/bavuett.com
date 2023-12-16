@@ -4,7 +4,7 @@ import { promises } from 'fs';
 import path from 'path';
 
 export default async function Posts() {
-  const index_path = path.resolve(`${process.cwd()}`, `public`, `content`, `index.json`);
+  const index_path = path.resolve(`./public`, `content`, `index.json`);
   const file = await promises.readFile(
     index_path,
     `utf8`

@@ -5,7 +5,7 @@ import path from 'path';
 export default async function Post({ params }: any) {
   const post_id = params.postId - 1;
 
-  const index_path = path.resolve(`${process.cwd()}`, `public`, `content`, `index.json`);
+  const index_path = path.resolve(`./public`, `content`, `index.json`);
   const file = await promises.readFile(
     index_path,
     `utf-8`
