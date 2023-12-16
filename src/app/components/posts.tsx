@@ -1,10 +1,12 @@
 import './posts.scss';
 
 import { promises } from 'fs';
+import path from 'path';
 
 export default async function Posts() {
+  const index_path = path.resolve(`${process.cwd()}`, `public`, `content`, `index.json`);
   const file = await promises.readFile(
-    `${process.cwd()}/content/index.json`,
+    index_path,
     `utf8`
   );
 
