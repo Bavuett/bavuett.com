@@ -4,7 +4,7 @@ import { promises } from 'fs';
 
 export default async function Posts() {
   const file = await promises.readFile(
-    `${process.cwd()}/src/app/content/index.json`,
+    `${process.cwd()}/public/content/index.json`,
     `utf8`
   );
 
