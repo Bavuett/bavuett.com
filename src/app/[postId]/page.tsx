@@ -11,7 +11,7 @@ export default async function Post({ params }: any) {
 
   const data = JSON.parse(file);
 
-  if (post_id < 0 || post_id > data.length) {
+  if (post_id < 0 || post_id > data.length || isNaN(post_id)) {
     redirect('..');
   }
 
