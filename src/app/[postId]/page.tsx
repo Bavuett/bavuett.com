@@ -43,6 +43,9 @@ export default async function Post({ params }: any) {
             {article_file}
           </Markdown>
         </section>
+        <section>
+          <button>Indietro</button>
+        </section>
       </div>
     </main>
   )

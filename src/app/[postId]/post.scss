@@ -6,15 +6,17 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 div.post-details {
-  width: 45%;
+  position: sticky;
+  top: 10%;
+  width: 30%;
 }
 
 div.post-content {
-  width: 50%;
+  width: 65%;
 }
 
 @media screen and (max-width: 768px) {
@@ -24,6 +26,8 @@ div.post-content {
   }
 
   div.post-details {
+    position: static;
+    top: 0;
     width: 100%;
   }
 

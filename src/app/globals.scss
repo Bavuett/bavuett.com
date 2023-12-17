@@ -59,6 +59,15 @@ section {
   padding-bottom: 1.25%;
 }
 
+button {
+  padding: 1.2em 10em;
+  background: #99999929;
+  border: solid 1px #99999959;
+  border-radius: 15px;
+  font-family: var(--font-libre);
+  cursor: pointer;
+}
+
 @media screen and (max-width: 768px) {
   main {
     padding-left: 4%;
