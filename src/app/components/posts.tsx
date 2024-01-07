@@ -15,21 +15,13 @@ export default async function Posts() {
   return (
     <section className="posts">
       <div className="introduction">
-        <h1>
-          <i> Ordine </i> di Coscienza.
-        </h1>
+        <h2>Ordine di Coscienza.</h2>
         <p>
-          Come leggere aiuta a <b> conoscere la realtà </b> che mi circonda, scrivere mi permette di dare
-          un <b>Ordine</b> al mio <b>Flusso di Coscienza</b>.
+          Userò questo spazio per esprimere la <b>mia</b> visione delle cose.
         </p>
         <p>
-          Non aspettarti pubblicazioni costanti. Questo è uno spazio libero da distrazioni e interazioni
-          futili, nel quale pubblico informazioni di potenziale utilità.
-        </p>
-        <p>
-          Potresti ritrovarti a leggere
-          una guida su un particolare argomento, come potrebbero capitare analisi su fenomeni mi hanno
-          interessato a tal punto da voler scrivere qualcosa al riguardo.
+          Non aspettarti pubblicazioni costanti. Non troverai nemmeno una sezione commenti, ma qualora
+          ci tenga a dire la tua sono aperto a conversazioni <b>articolate e ragionate</b> su Mastodon e via Email.
         </p>
       </div>
       <div className="posts-list">
