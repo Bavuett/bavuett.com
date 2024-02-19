@@ -13,6 +13,7 @@ div.post-details {
   position: sticky;
   top: 10%;
   width: 30%;
+  padding-bottom: 5%;
 }
 
 div.post-content {
@@ -37,7 +38,7 @@ div.actions {
     bottom: 0;
     right: 0;
     padding: 2%;
-    border-top: solid black 1px;
+    border-top: solid grey 1px;
     background: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
   }
@@ -45,11 +46,14 @@ div.actions {
   div.post-details {
     position: static;
     top: 0;
+    padding-top: 5%;
     width: 100%;
+    border-bottom: solid 1px grey;
   }
 
   div.post-content {
     width: 100%;
+    padding-top: 5%;
     padding-bottom: 20%;
   }
 }

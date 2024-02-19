@@ -27,6 +27,9 @@ export default async function Posts() {
                     {post.title}
                   </a>
                 </h3>
+                <p>
+                  {post.description}
+                </p>
               </div>
             )
           })

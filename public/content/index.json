@@ -1,6 +1,13 @@
 [
   {
     "title": "Uno spazio per sè.",
+    "description": "Generic description",
+    "keywords": [
+      "Spazio",
+      "Social",
+      "Scrittura",
+      "Blog"
+    ],
     "date": "05 Novembre 2023"
   }
 ]
