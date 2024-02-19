@@ -10,11 +10,12 @@ export default function Home() {
             <b>Il mio nome è Lorenzo Barretta.</b> Sin da bambino sono appassionato, oltre che di Informazione in generale, di Informatica e tutt'ora la studio all'Università.
           </p>
           <p>
-            Credo nell'informazione accessibile e aperta, e che quest'ultima possa essere fatta attraverso forme d'arte apparentente superficiali come il fumetto.
-            Ritengo infatti possano essere efficaci quanto un libro nel descrivere la realtà che ci circonda, con tutte le varie sfaccettature che la compongono.
+            Credo nell'Informazione accessibile, aperta e sincera. Per questo motivo, ho deciso di sfruttare questo spazio interamente creato a
+            mano per esporre la mia visione delle cose, lontano dal rumore dei social.
           </p>
           <p>
-            Questo non vuol dire che io non legga libri, in quanto questo medium costituisce buona parte dei motivi per il quale ho questa opinione in merito ai mezzi di comunicazione.
+            Non aspettarti pubblicazioni costanti.
+            Non troverai nemmeno una sezione commenti, ma qualora ci tenga a dire la tua sono aperto a conversazioni articolate e ragionate via Email.
           </p>
         </section>
         <Posts />

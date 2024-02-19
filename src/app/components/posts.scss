@@ -1,25 +1,21 @@
 section.posts {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-content: flex-start;
   align-items: flex-start;
 }
 
 div.introduction {
-  position: sticky;
-  top: 5%;
-  width: 44%;
-  padding-right: 2%;
+  width: 100%;
 }
 
 div.posts-list {
-  padding-top: 2%;
-  padding-left: 10%;  
+  padding-top: 1%;
 }
 
 div.post {
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding-top: 6.5%;
+  padding-bottom: 6.5%;
 
   h3 {
     font-family: var(--font-ibm);
@@ -47,5 +43,10 @@ div.post {
 
   div.posts-list {
     padding-left: 0%;
+  }
+
+  div.post {
+    padding-top: 3%;
+    padding-bottom: 3%;
   }
 }

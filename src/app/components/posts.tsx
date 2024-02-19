@@ -14,16 +14,6 @@ export default async function Posts() {
 
   return (
     <section className="posts">
-      <div className="introduction">
-        <h2>Ordine di Coscienza.</h2>
-        <p>
-          Userò questo spazio per esprimere la <b>mia</b> visione delle cose.
-        </p>
-        <p>
-          Non aspettarti pubblicazioni costanti. Non troverai nemmeno una sezione commenti, ma qualora
-          ci tenga a dire la tua sono aperto a conversazioni <b>articolate e ragionate</b> su Mastodon e via Email.
-        </p>
-      </div>
       <div className="posts-list">
         {
           data.map((post: any, index: number) => {

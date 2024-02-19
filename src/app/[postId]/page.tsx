@@ -30,21 +30,25 @@ export default async function Post({ params }: any) {
   return (
     <main>
       <div className="post-details">
-        <h5>
-          {data[post_id].date}
-        </h5>
-        <h1>
-          {data[post_id].title}
-        </h1>
+        <div>
+          <h5>
+            {data[post_id].date}
+          </h5>
+          <h1>
+            {data[post_id].title}
+          </h1>
+        </div>
+        <div className="actions">
+          <a href='..'>
+            <button>Indietro</button>
+          </a>
+        </div>
       </div>
       <div className="post-content">
         <section>
           <Markdown>
             {article_file}
           </Markdown>
-        </section>
-        <section>
-          <button>Indietro</button>
         </section>
       </div>
     </main>

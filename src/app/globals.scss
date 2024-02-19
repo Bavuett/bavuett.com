@@ -29,7 +29,7 @@ a {
 
 p {
   font-family: var(--font-ibm);
-  font-size: 1em;
+  font-size: 1.15em;
   font-weight: 500;
   padding: 0.2;
   padding-top: 1%;
@@ -48,24 +48,46 @@ p {
   }
 }
 
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.35em;
+}
+
 main {
   padding: 1%;
   padding-left: 10%;
   padding-right: 10%;
 }
 
-section {
-  padding-top: 1.25%;
-  padding-bottom: 1.25%;
+button {
+  width: 100%;
+  padding: 0.85em;
+  font-size: 1em;
+  font-weight: 900;
+  background: #000000;
+  color: white;
+  border: solid 2px black;
+  text-transform: uppercase;
+  border-radius: 30px;
+  font-family: var(--font-ibm);
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  box-shadow: 5px 5px 24px 5px rgba(0,0,0,0);
 }
 
-button {
-  padding: 1.2em 10em;
-  background: #99999929;
-  border: solid 1px #99999959;
-  border-radius: 15px;
-  font-family: var(--font-libre);
-  cursor: pointer;
+button:hover {
+  opacity: 1;
+  transform: translateY(-0.1em);
+  box-shadow: 2px 5px 20px 5px rgba(0,0,0,0.2);
+  transition: all 0.3s ease 0s;
+}
+
+button:active {
+  transform: scale(0.9);
+  transition: all 0.3s ease 0s;
 }
 
 @media screen and (max-width: 768px) {
