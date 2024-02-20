@@ -57,9 +57,81 @@ h3 {
 }
 
 main {
+  display: block;
   padding: 1%;
   padding-left: 10%;
   padding-right: 10%;
+}
+
+img {
+  width: 100%;
+}
+
+code {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  border: solid 1px #CCCCCC;
+  background: #EEEEEEFF;
+  border-radius: 3px;
+  font-weight: 600;
+  padding: 0.8em;
+  font-size: 1.2em;
+}
+
+blockquote {
+  width: 100%;
+  margin-top: 0.6em;
+  margin-bottom: 0.9em;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+
+  p {
+    font-style: italic;
+  }
+
+  ::before {
+    content: "\“";
+    padding-right: 0.2em;
+    font-size: 1.5em;
+    font-family: var(--font-libre);
+    position: relative;
+    top: 0.2em;
+  }
+
+  ::after {
+    content: "\”";
+    padding-right: 0.2em;
+    font-size: 1.5em;
+    font-family: var(--font-libre);
+    position: relative;
+    top: 0.7em;
+  }
+}
+
+ul {
+  width: 100%;
+  list-style: none;
+  display: block;
+
+  ::before {
+    position: relative;
+    content: "—";
+    left: -0.1rem;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    height: 100%;
+  }
+}
+
+li {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  font-family: var(--font-ibm);
+  font-size: 1.1em;
 }
 
 button {
@@ -103,5 +175,9 @@ button:active {
 
   button {
     padding: 0.60em;
+  }
+
+  img {
+    width: 100%;
   }
 }
