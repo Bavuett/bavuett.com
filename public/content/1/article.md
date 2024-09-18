@@ -1,12 +1,6 @@
-This is an article.
+Questo sito ha impiegato un intero anno per essere sviluppato. Incredibilmente, oggi esce alla luce. È impressionante cosa si
+riesca a fare con le giuste condizioni.
 
-## Second paragraph.
-
-This is the beginning of a paragraph.
-
-``
-console.log(data);
-``
 
 ## Third paragraph.
 
@@ -23,8 +17,6 @@ This is a quote by Steve Jobs.
 Proin placerat laoreet justo nec blandit. Ut nunc nisl, laoreet vel tincidunt sed, consectetur vel ligula. Maecenas a nisl fringilla, faucibus eros nec, ornare ex. Fusce vitae enim non quam mollis porttitor a nec tellus. Duis ultricies interdum augue, nec pharetra augue egestas nec. Fusce elit sapien, pulvinar sit amet augue sed, imperdiet ultrices dolor. Duis hendrerit facilisis laoreet.
 
 Quisque mollis tincidunt ipsum in porta. Quisque tempus lacinia maximus. Nullam eu dignissim nisi. Suspendisse potenti. Aliquam ultrices posuere posuere. Nunc vehicula at elit vitae porta. Nunc mollis leo sit amet pretium interdum.
-
-#### Fourth Header.
 
 Ut sed nunc purus. Nullam purus risus, auctor vitae lacus a, viverra volutpat sem. Nulla ac hendrerit mauris, a eleifend sem. Cras sed cursus arcu. Sed turpis odio, malesuada et gravida in, tempus quis odio. Ut convallis gravida imperdiet. Vestibulum facilisis, dolor ut porta rhoncus, augue velit eleifend sapien, sit amet pellentesque velit tortor ut metus. Sed tempor eu urna a porttitor.
 

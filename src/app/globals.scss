@@ -3,15 +3,15 @@
   padding: 0;
   margin: 0;
   font-weight: 400;
-  background: #FFFFFF;
+  background: #ffffff;
   color: #242424;
   cursor: default;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: black;
-  font-family: var(--font-libre);
-  font-weight: 700;
+  font-family: var(--font-1);
+  font-weight: 900;
 
   i {
     color: black;
@@ -28,10 +28,9 @@ a {
 }
 
 p {
-  font-family: var(--font-ibm);
-  font-size: 1.15em;
-  font-weight: 500;
-  padding: 0.2%;
+  font-family: var(--font-2);
+  font-size: 1.5em;
+  font-weight: 300;
   padding-top: 1%;
   padding-bottom: 1%;
 
@@ -48,19 +47,23 @@ p {
   }
 }
 
+h1 {
+  font-size: 3.5em;
+}
+
 h2 {
-  font-size: 1.5em;
+  font-size: 1.8em;
 }
 
 h3 {
-  font-size: 1.35em;
+  font-size: 1.5em;
 }
 
 main {
   display: block;
   padding: 1%;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 img {
@@ -71,10 +74,10 @@ code {
   display: block;
   margin-top: 0.5em;
   margin-bottom: 1em;
-  border: solid 1px #CCCCCC;
-  background: #EEEEEEFF;
-  border-radius: 3px;
-  font-weight: 600;
+  border: solid 1px #e7dddd;
+  background: #ffdaaf34;
+  border-radius: 1px;
+  font-weight: 400;
   padding: 0.8em;
   font-size: 1.2em;
 }
@@ -96,7 +99,7 @@ blockquote {
     content: "\“";
     padding-right: 0.2em;
     font-size: 1.5em;
-    font-family: var(--font-libre);
+    font-family: var(--font-1);
     position: relative;
     top: 0.2em;
   }
@@ -105,7 +108,7 @@ blockquote {
     content: "\”";
     padding-right: 0.2em;
     font-size: 1.5em;
-    font-family: var(--font-libre);
+    font-family: var(--font-1);
     position: relative;
     top: 0.7em;
   }
@@ -130,7 +133,7 @@ li {
   width: 100%;
   display: inline-block;
   position: relative;
-  font-family: var(--font-ibm);
+  font-family: var(--font-2);
   font-size: 1.1em;
 }
 
@@ -139,12 +142,13 @@ button {
   padding: 0.85em;
   font-size: 1em;
   font-weight: 900;
-  background: #000000;
-  color: white;
+  background: #ffffff;
+  color: black;
   border: solid 2px black;
   text-transform: uppercase;
-  border-radius: 30px;
-  font-family: var(--font-ibm);
+  border-radius: 0px;
+  font-family: var(--font-2);
+  letter-spacing: 2px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
   box-shadow: 5px 5px 24px 5px rgba(0,0,0,0);
@@ -153,7 +157,7 @@ button {
 button:hover {
   opacity: 1;
   transform: translateY(-0.1em);
-  box-shadow: 2px 5px 20px 5px rgba(0,0,0,0.2);
+  // box-shadow: 2px 5px 20px 5px rgba(0,0,0,0.2);
   transition: all 0.3s ease 0s;
 }
 
@@ -169,12 +173,13 @@ button:active {
   }
 
   p {
+    font-size: 1.35em;
     padding-top: 1.5%;
     padding-bottom: 1.5%;
   }
 
   button {
-    padding: 0.60em;
+    padding: 1em;
   }
 
   img {

@@ -3,7 +3,7 @@ import './globals.scss'
 
 import Navbar from './components/navbar'
 
-import { IBMPlexSans, LibreBaskerville } from './fonts/fonts'
+import { Suse, SpaceGrotesk } from './fonts/fonts'
 
 export const metadata: Metadata = {
   title: '@Bavuett',
@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={IBMPlexSans.variable + " " + LibreBaskerville.variable}>
+      <body className={Suse.variable + " " + SpaceGrotesk.variable}>
         <Navbar />
         {children}
       </body>

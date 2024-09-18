@@ -1,10 +1,12 @@
+import './page.scss';
+
 import Posts from "./components/posts";
 
 export default function Home() {
   return (
     <main>
       <div>
-        <section>
+        <section className="header">
           <h1>Creando, imparando, e <i>rompendo</i> cose.</h1>
           <p>
             <b>Il mio nome è Lorenzo Barretta.</b> Sin da bambino sono appassionato, oltre che di Informazione in generale, di Informatica e tutt'ora la studio all'Università.
