@@ -10,7 +10,7 @@ div.introduction {
 }
 
 div.posts-list {
-  padding-top: 1%;
+  padding-top: 0%;
 }
 
 div.post {
@@ -22,9 +22,17 @@ div.post {
     color: black;
     font-weight: 800;
     font-size: 1.6em;
+
+    a {
+      font-weight: 800;
+    }
   }
 
-  h5 {
+  h4 {
+    font-family: var(--font-1);
+    font-size: 1.2em;
+    font-weight: 900;
+    text-transform: uppercase;
     color: #242424;
   }
 }

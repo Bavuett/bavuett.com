@@ -19,9 +19,9 @@ export default async function Posts() {
           data.map((post: any, index: number) => {
             return (
               <div className="post" key={index + 1}>
-                <h5>
-                  Pagina {index + 1} — {post.date}
-                </h5>
+                <h4>
+                  {post.date}
+                </h4>
                 <h3>
                   <a href={`./${index + 1}`}>
                     {post.title}

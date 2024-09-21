@@ -9,7 +9,7 @@ export default function Home() {
         <section className="header">
           <h1>Creando, imparando, e <i>rompendo</i> cose.</h1>
           <p>
-            <b>Il mio nome è Lorenzo Barretta.</b> Sin da bambino sono appassionato, oltre che di Informazione in generale, di Informatica e tutt'ora la studio all'Università.
+            <b>Il mio nome è Lorenzo Barretta</b>, e questo è il mio bizzarro flusso di coscienza.
           </p>
           <p>
             Credo nell'Informazione accessibile, aperta e sincera. Per questo motivo, ho deciso di sfruttare questo spazio interamente creato a
@@ -17,7 +17,7 @@ export default function Home() {
           </p>
           <p>
             Non aspettarti pubblicazioni costanti.
-            Non troverai nemmeno una sezione commenti, ma qualora ci tenga a dire la tua sono aperto a conversazioni articolate e ragionate via Email.
+            Non troverai nemmeno una sezione commenti, ma qualora ci tenga a dire la tua sono aperto a conversazioni articolate e ragionate via <a href="">Email</a>.
           </p>
         </section>
         <Posts />

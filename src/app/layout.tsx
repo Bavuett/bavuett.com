@@ -4,6 +4,7 @@ import './globals.scss'
 import Navbar from './components/navbar'
 
 import { Suse, SpaceGrotesk } from './fonts/fonts'
+import Footer from './components/footer'
 
 export const metadata: Metadata = {
   title: '@Bavuett',
@@ -20,6 +21,7 @@ export default function RootLayout({
       <body className={Suse.variable + " " + SpaceGrotesk.variable}>
         <Navbar />
         {children}
+        <Footer/>
       </body>
     </html>
   )
