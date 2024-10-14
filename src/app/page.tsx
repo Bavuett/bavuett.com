@@ -17,7 +17,7 @@ export default function Home() {
           </p>
           <p>
             Non aspettarti pubblicazioni costanti.
-            Non troverai nemmeno una sezione commenti, ma qualora ci tenga a dire la tua sono aperto a conversazioni articolate e ragionate via <a href="">Email</a>.
+            Non troverai nemmeno una sezione commenti, ma qualora ci tenga a dire la tua sono aperto a conversazioni articolate e ragionate via <a href="mailto:website@bavuett.com">Email</a>.
           </p>
         </section>
         <Posts />

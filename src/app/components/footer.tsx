@@ -8,7 +8,7 @@ export default function Footer() {
                     Copyright 2024 Lorenzo Barretta
                 </h3>
                 <h4>
-                    Built publicly using Open Source technologies.
+                    Scritto pubblicamente usando tecnologie Open Source.
                 </h4>
             </div>
         </footer>

@@ -56,7 +56,9 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 1.9em;
+  font-weight: 400;
+  color: #2e2e2e;
 }
 
 main {
@@ -166,6 +168,14 @@ button:active {
   transition: all 0.3s ease 0s;
 }
 
+span.inline-code {
+  padding: 0.1em;
+  border: solid 1px #e7dddd;
+  background: #ffdaaf34;
+  border-radius: 1px;
+  font-weight: 400;
+}
+
 @media screen and (max-width: 768px) {
   main {
     padding-left: 4%;
@@ -173,7 +183,13 @@ button:active {
   }
 
   h1 {
-    font-size: 2.85em;
+    font-size: 2.5em;
+  }
+
+  h3 {
+    font-size: 1.6em;
+    font-weight: 400;
+    color: #2e2e2e;
   }
 
   p {
