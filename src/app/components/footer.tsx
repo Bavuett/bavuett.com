@@ -5,10 +5,10 @@ export default function Footer() {
         <footer>
             <div className="copyright">
                 <h3>
-                    Copyright 2024 Lorenzo Barretta
+                    Scritto da Lorenzo Barretta. 2024-25.
                 </h3>
                 <h4>
-                    Scritto pubblicamente usando tecnologie Open Source.
+                    Pigramente e pubblicamente, usando tecnologie Open Source.
                 </h4>
             </div>
         </footer>
