@@ -7,7 +7,8 @@ import path from 'path';
 import Markdown from 'markdown-to-jsx';
 
 export async function generateMetadata({ params }: any): Promise<Metadata> {
-  const post_id = params.postId - 1;
+  const resolvedParams = await params;
+  const post_id = resolvedParams.postId - 1;
 
   const index_path = path.resolve(`./public`, `content`, `index.json`);
   const index_file = await promises.readFile(
@@ -30,8 +31,9 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
 }
 
 export default async function Post({ params }: any) {
-  const post_id = params.postId - 1;
-  const post_id_fs = params.postId;
+  const resolvedParams = await params;
+  const post_id = resolvedParams.postId - 1;
+  const post_id_fs = resolvedParams.postId;
 
   const index_path = path.resolve(`./public`, `content`, `index.json`);
   const index_file = await promises.readFile(
