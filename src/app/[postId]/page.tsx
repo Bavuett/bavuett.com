@@ -5,6 +5,7 @@ import { Metadata } from 'next';
 import { redirect } from 'next/navigation';
 import path from 'path';
 import Markdown from 'markdown-to-jsx';
+import { PostMetadata } from '@/types/post';
 
 export async function generateMetadata({ params }: any): Promise<Metadata> {
   const resolvedParams = await params;
@@ -17,7 +18,7 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
     `utf-8`
   );
 
-  const data = JSON.parse(index_file);
+  const data: PostMetadata[] = JSON.parse(index_file);
 
   if (post_id < 0 || post_id > data.length || isNaN(post_id)) {
     redirect('..')
@@ -27,12 +28,16 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
   const postUrl = `https://bavuett.com/${post_id_fs}`;
   const postTitle = `${post.title}`;
   const postDescription = `${post.description}`;
+  
+  // Helper to check if post has valid keywords
+  const hasKeywords = Array.isArray(post.keywords) && post.keywords.length > 0;
+  const postKeywords = hasKeywords ? post.keywords : ['Lorenzo Barretta', 'Bavuett', 'Blog'];
 
   return {
     title: postTitle,
     description: postDescription,
     authors: [{ name: `Lorenzo Barretta` }, { name: `@Bavuett` }],
-    keywords: Array.isArray(post.keywords) && post.keywords.length > 0 ? post.keywords : ['Lorenzo Barretta', 'Bavuett', 'Blog'],
+    keywords: postKeywords,
     openGraph: {
       type: 'article',
       locale: 'it_IT',
@@ -42,7 +47,7 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
       siteName: '@Bavuett',
       publishedTime: post.date,
       authors: ['Lorenzo Barretta'],
-      tags: Array.isArray(post.keywords) && post.keywords.length > 0 ? post.keywords : [],
+      tags: hasKeywords ? post.keywords : [],
     },
     twitter: {
       card: 'summary_large_image',
@@ -64,7 +69,7 @@ export default async function Post({ params }: any) {
     `utf-8`
   );
 
-  const data = JSON.parse(index_file);
+  const data: PostMetadata[] = JSON.parse(index_file);
 
   if (post_id < 0 || post_id > data.length || isNaN(post_id)) {
     redirect('..');

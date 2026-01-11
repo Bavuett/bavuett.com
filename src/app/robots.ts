@@ -1,13 +1,14 @@
 import { MetadataRoute } from 'next'
 import { promises as fs } from 'fs'
 import path from 'path'
+import { PostMetadata } from '@/types/post'
 
 export default async function robots(): Promise<MetadataRoute.Robots> {
   const baseUrl = 'https://bavuett.com'
   
   // Read the posts index to get all posts and their metadata
   const indexPath = path.resolve('./public', 'content', 'index.json')
-  let posts: any[] = []
+  let posts: PostMetadata[] = []
   
   try {
     const indexFile = await fs.readFile(indexPath, 'utf-8')
