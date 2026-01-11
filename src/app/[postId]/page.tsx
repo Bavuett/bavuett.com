@@ -9,6 +9,7 @@ import Markdown from 'markdown-to-jsx';
 export async function generateMetadata({ params }: any): Promise<Metadata> {
   const resolvedParams = await params;
   const post_id = resolvedParams.postId - 1;
+  const post_id_fs = resolvedParams.postId;
 
   const index_path = path.resolve(`./public`, `content`, `index.json`);
   const index_file = await promises.readFile(
@@ -22,11 +23,33 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
     redirect('..')
   }
 
+  const post = data[post_id];
+  const postUrl = `https://bavuett.com/${post_id_fs}`;
+  const postTitle = `${post.title}`;
+  const postDescription = `${post.description}`;
+
   return {
-    title: `${data[post_id].title} — @Bavuett`,
-    description: `Written on ${data[post_id].date}. ${data[post_id].description}`,
+    title: postTitle,
+    description: postDescription,
     authors: [{ name: `Lorenzo Barretta` }, { name: `@Bavuett` }],
-    keywords: data.keywords,
+    keywords: post.keywords && post.keywords.length > 0 ? post.keywords : ['Lorenzo Barretta', 'Bavuett', 'Blog'],
+    openGraph: {
+      type: 'article',
+      locale: 'it_IT',
+      url: postUrl,
+      title: postTitle,
+      description: postDescription,
+      siteName: '@Bavuett',
+      publishedTime: post.date,
+      authors: ['Lorenzo Barretta'],
+      tags: post.keywords && post.keywords.length > 0 ? post.keywords : [],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: postTitle,
+      description: postDescription,
+      creator: '@Bavuett',
+    },
   }
 }
 
