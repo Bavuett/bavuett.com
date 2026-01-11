@@ -40,7 +40,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         }
       }
     } catch (e) {
-      console.error('Error parsing date:', e)
+      console.error('Error parsing date:', dateStr, e)
     }
 
     return {

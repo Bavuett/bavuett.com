@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
     title: postTitle,
     description: postDescription,
     authors: [{ name: `Lorenzo Barretta` }, { name: `@Bavuett` }],
-    keywords: post.keywords && post.keywords.length > 0 ? post.keywords : ['Lorenzo Barretta', 'Bavuett', 'Blog'],
+    keywords: Array.isArray(post.keywords) && post.keywords.length > 0 ? post.keywords : ['Lorenzo Barretta', 'Bavuett', 'Blog'],
     openGraph: {
       type: 'article',
       locale: 'it_IT',
@@ -42,7 +42,7 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
       siteName: '@Bavuett',
       publishedTime: post.date,
       authors: ['Lorenzo Barretta'],
-      tags: post.keywords && post.keywords.length > 0 ? post.keywords : [],
+      tags: Array.isArray(post.keywords) && post.keywords.length > 0 ? post.keywords : [],
     },
     twitter: {
       card: 'summary_large_image',
