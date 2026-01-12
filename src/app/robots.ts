@@ -4,7 +4,7 @@ import path from 'path'
 import { PostMetadata } from '@/types/post'
 
 export default async function robots(): Promise<MetadataRoute.Robots> {
-  const baseUrl = 'https://bavuett.com'
+  const baseUrl = 'https://bavuett.it'
   
   // Read the posts index to get all posts and their metadata
   const indexPath = path.resolve('./public', 'content', 'index.json')
