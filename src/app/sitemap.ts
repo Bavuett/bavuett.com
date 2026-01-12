@@ -60,12 +60,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: 'weekly',
       priority: 1,
     },
+    /* 
+    /* Temporarily hidden as it is not being used at the moment.
     {
       url: `${baseUrl}/posts`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.9,
     },
+    */
   ]
 
   return [...staticPages, ...postEntries]
