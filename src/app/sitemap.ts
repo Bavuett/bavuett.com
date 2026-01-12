@@ -2,9 +2,9 @@ import { MetadataRoute } from 'next'
 import { promises as fs } from 'fs'
 import path from 'path'
 import { PostMetadata } from '@/types/post'
+import { baseUrl } from '@/config/site'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = 'https://bavuett.it'
   
   // Read the posts index to get all posts and their metadata
   const indexPath = path.resolve('./public', 'content', 'index.json')
